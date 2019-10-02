@@ -1,7 +1,7 @@
 from contextlib import contextmanager
 from urllib.parse import urljoin
 
-from alfacoins import ALFACoins
+from alfacoins_api_python import ALFACoins
 from nanohttp import Application
 from restfulpy.mockup import mockup_http_server
 

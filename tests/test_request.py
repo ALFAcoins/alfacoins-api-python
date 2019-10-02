@@ -1,4 +1,4 @@
-from alfacoins import ServerException, APIException
+from alfacoins_api_python import ServerException, APIException
 from nanohttp import RegexRouteController, json, context
 import pytest
 

@@ -1,5 +1,5 @@
 import pytest
-from alfacoins import APIException
+from alfacoins_api_python import APIException
 from nanohttp import RegexRouteController, json
 
 from .helper import unauthorized_alfacoins_mockup_gateway

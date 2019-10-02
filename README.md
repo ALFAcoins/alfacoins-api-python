@@ -1,19 +1,19 @@
-Python ALFACoins
+ALFAcoins API Python implementation.
 
-A Python3.6 wapper aournd the [ALFACoins](https://www.alfacoins.com/) [APIs](https://www.alfacoins.com/developers).
+A Python3.6 wrapper around the [ALFACoins](https://www.alfacoins.com/) [APIs](https://www.alfacoins.com/developers).
  
-by [Carrene](https://github.com/Carrene).
+by [Arash Fatahzade](https://github.com/ArashFatahzade).
 
-[![Build Status](https://travis-ci.com/ArashFatahzade/alfacoins.svg?branch=master)](https://travis-ci.com/ArashFatahzade/alfacoins)
-[![Coverage Status](https://coveralls.io/repos/github/ArashFatahzade/alfacoins/badge.svg?branch=master)](https://coveralls.io/github/ArashFatahzade/alfacoins?branch=master)
+[![Build Status](https://travis-ci.org/ALFAcoins/alfacoins-api-python.svg?branch=master)](https://travis-ci.org/ALFAcoins/alfacoins-api-python)
+[![Coverage Status](https://coveralls.io/repos/github/ALFAcoins/alfacoins-api-python/badge.svg?branch=master)](https://coveralls.io/github/ALFAcoins/alfacoins-api-python?branch=master)
 
 ## Description
 
-**alfacoins** is a Python3.6 Library for interacting with [ALFAcoins API](https://www.alfacoins.com/developers).
+**alfacoins_api_python** is a Python3.6 Library for interacting with [ALFAcoins API](https://www.alfacoins.com/developers).
 
-**alfacoins** provides cryptocurrency payment integration on your website via [ALFAcoins](https://www.alfacoins.com).
+**alfacoins_api_python** provides cryptocurrency payment integration on your website via [ALFAcoins](https://www.alfacoins.com).
 
-**alfacoins** allows you to integrate payments with the following cryptocurrencies:
+**alfacoins_api_python** allows you to integrate payments with the following cryptocurrencies:
 * Bitcoin (BTC)
 * Ethereum (ETH)
 * XRP (XRP)
@@ -34,11 +34,21 @@ by [Carrene](https://github.com/Carrene).
 
 *: Private API
 
+## Building
+You need to have Python 3.6+ in order to use this package.
+Consider using [pyenv](https://github.com/pyenv/pyenv) for virtual Python 3.6 environment.
+
+```bash
+pip3.6 install -r requirements_dev.txt
+python3.6 setup.py build
+```
+
 ## Installation
 
 ```bash
-pip3.6 install alfacoins
+pip3.6 install alfacoins_api_python
 ```
+
 
 ## Getting Started
 
@@ -49,7 +59,7 @@ You can get an instance of `ALFACoins` class like this:
 #### For public APIs
 
 ```python
-from alfacoins import ALFACoins
+from alfacoins_api_python import ALFACoins
 
 
 alfacoins = ALFACoins()
@@ -58,7 +68,7 @@ alfacoins = ALFACoins()
 #### For private APIs
 
 ```python3
-from alfacoins import ALFACoins
+from alfacoins_api_python import ALFACoins
 
 
 alfacoins = ALFACoins(

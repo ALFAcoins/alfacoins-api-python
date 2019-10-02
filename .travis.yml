@@ -1,6 +1,6 @@
 env:
   global:
-  - COMMIT_AUTHOR_EMAIL: arash.fattahzade@carrene.com
+  - COMMIT_AUTHOR_EMAIL: alfacoins@users.noreply.github.com
 language: python
 dist: trusty
 python: '3.6'
@@ -14,16 +14,16 @@ addons:
     packages:
     - libpq-dev
 install: "./scripts/travis-install.sh"
-script: py.test --cov=alfacoins
+script: py.test --cov=alfacoins_api_python
 after_success: travis_retry coveralls
 deploy:
   provider: pypi
-  user: Rhonin
+  user: "__token__"
   skip_cleanup: true
   password:
-    secure: "bM3SK2h4O8yWEWvg+w3uh8Zp9g2v167pECbDgDKYfRBOHzXXzNVz28XRT3MWb87bw7smup+XH0tGDKxk9SbS+arUVyR08uWY/kuA3Olz5hMf0V4IV2RUy4/qTG9h4RQJN0KullR2K4eITzE4MGixM2Bbh2ofzA9B1AvhnyBZ52gtIpDXXcghNblQA3XE1+qACyRjgIdIOo2jeoQ6NUjWhdUSsD+2CNYONPe/ElKJ/aBHW3V8W+H2DQwcWltxc0Piggay2wokpNysa7uToTvOlkhwKD+38Sr+HF1q9dS4//TEiwRJ7qQNWxvgMu//Ume3xdZaCJDLWdIjJcIqW7d0B4lW6RiBhjWnhra93yOvStsReiEC6TkpqQoTJesw8VShdLs7t6XLv6sj/pFef9OMp3GRkh0ZcDY/V+fvlZjsDORicnNMBphOET7rU1/QUluCuBal4k7tyyyRnID4WXldVLwzFQBnZU8S43Ye2ubEOoGVSdmbjnJqeOzu+0Wn0n06uWHStBT8FjLST/IOAEANp2UNTUmOIpLnKUKpI+z+IP8XoieZOgR51YH/PyhlArKr5vOQPUvBCtnlg8pmapibvZHaOsjLseeIAjdaA1RzUo2rUTaev5meALvl0N04lOB5innPpyATeUiAGuSEv2+xdJWxTgbz2jYfVMgPkVtyInQ="
+    secure: "KQqvL/WIMAWF4FSf07oOp/9n0xPJLOHEGoBuqH5BS0roEQbF374G4BBh55d9LSFpPTDELNHefCVRu/+4P3OWWYx6EuGXyQaaf5sHcKU6CnMa8iFLqW3bEkUdsyhK3I5+7Am68whKHZbjmoakJ2dYtSMpgMAMwA9B2VZUbqW4mYIAOxguGpSLuNVeGM62/cl9Qvz4Kk2X6gncYfCqpWizruLCQE/wIatvIvOj2IKMznOxiFURqMdToO212XY0FitQHuFKqwR97qTOCHvqJUwPwvyr7IXbXvSrCfU92JyjgxZngzkSptqJycgp9ppgyPvKYOO8jLA+rBoEqmSiTz+NyNHtn9MS60zniRcwyT7EIm5zy/jXbmAiKJB82rILumGbxoAkGdhCeiNNMOCV3HoCGLYR+yUAepq3GPWzejNMrGCjknfQFBj4+8tdy2FBr78eUCEdeij9u6pOnTD19IsPzSZAbQCCANBoE3UrL8YWsUhwNnLUs83H+QRCMz9t7ajS5RK1QtZ2H439/ZmHRfIax1SDpmhpMGNzrQu6x0GLVl+9D21k80aKgMv91muDyZ5Ff75/WcecdIwxiFgtaJ65kwT3xZcP+YGt7j6LvLHcEnA6jL+yoDZ/Bdl8R6jc1P22EgoElPzoRugBqMLUguo1DGqvFcmfFZdVdpnUT8j1owU=" 
   on:
     tags: true
     distributions: sdist bdist_wheel
-    repo: ArashFatahzade/alfacoins
+    repo: ALFAcoins/alfacoins-api-python
     condition: "$TRAVIS_PYTHON_VERSION = 3.6"

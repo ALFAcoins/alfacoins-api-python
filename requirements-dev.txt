@@ -1,4 +1,4 @@
-restfulpy
+restfulpy~=2.0
 coverage
 coveralls
 pytest-pudb
