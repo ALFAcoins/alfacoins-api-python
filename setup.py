@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 
 # reading package version (same way the sqlalchemy does)
-with open(join(dirname(__file__), 'alfacoins', '__init__.py')) as v_file:
+with open(join(dirname(__file__), 'alfacoins_api_python', '__init__.py')) as v_file:
     package_version = re.\
         compile(r".*__version__ = '(.*?)'", re.S).\
         match(v_file.read()).\
@@ -17,14 +17,14 @@ dependencies = [
 
 
 setup(
-    name="alfacoins",
+    name="alfacoins_api_python",
     version=package_version,
     author="Arash Fatahzade",
     author_email="fatahzade@gmail.com",
-    description="ALFACoins API library",
+    description="ALFAcoins API Python 3.6+ Library",
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/ArashFatahzade/alfacoins',
+    url='https://github.com/alfacoins/alfacoins-api-python',
     install_requires=dependencies,
     packages=find_packages(),
     test_suite="tests",
