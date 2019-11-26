@@ -151,7 +151,8 @@ class ALFACoins:
             coin_amount=coin_amount,
             recipient_name=recipient_name,
             recipient_email=recipient_email,
-            reference=reference
+            reference=reference,
+            options=options
         )
 
         return int(self._request('POST', 'bitsend', json_data=data)['id'])
